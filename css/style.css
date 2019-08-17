@@ -1,0 +1,432 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+html {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #705648;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+ul:not(.list){
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.dark{
+    color: #fff;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.button,
+a.button {
+    background: rgba(255,128,0,1);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    display: inline-block;
+}
+.button:hover{
+    background: rgba(255,128,0,0.9);
+}
+input[type*="search"]::placeholder {
+  color: #ccc;
+  opacity: 1; /* Firefox */
+}
+
+input[type*="search"]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #ccc;
+}
+
+input[type*="search"]::-ms-input-placeholder { /* Microsoft Edge */
+ color: #ccc;
+}
+.header {
+    /*max-width: 1480px;*/
+    width: 100%;
+   /* margin: 0 auto;*/
+  /*  padding: 10px 20px;*/
+    position: fixed;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 3;
+    align-items: center;
+}
+/*.header > div {
+    display: inline-block;
+    vertical-align: middle;
+}*/
+header nav {
+    display: inline-block;
+}
+.header-logo {
+    /*border: 1px solid;*/
+    /*padding: 5px 10px;*/
+    /*margin-right: 20px;*/
+    /*color: #000;*/
+}
+.header-logo img {
+    max-width: 230px;
+}
+.nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav ul > li{
+    display: inline-block;
+}
+.nav ul li {
+    padding-right: 15px;
+}
+.nav ul li a {
+    color: #705648;
+    text-decoration: none;
+    padding: 5px 0;
+    font-size: 20px;
+}
+.nav ul li a:hover {
+    border-bottom: 1px solid;
+    color: #FF4B45;
+}
+.banner{
+    min-height: 500px;
+    background: url(../images/hal-gatewood-405338-unsplash.jpg);
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 140px;
+    position: relative;
+    padding-bottom: 80px;
+}
+.banner:before {
+    content: "";
+    background: rgba(135,3,29,0.6);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+.banner-content{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.banner_intro {
+    color: #fff;
+}
+.banner_intro p {
+    margin: 0;
+    text-transform: uppercase;
+    position: relative;
+}
+.banner_intro p:after {
+    content: "";
+    width: 160px;
+    background: #fff;
+    height: 2px;
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+.banner_contact {
+    background: #fff;
+    padding: 30px;
+    border-radius: 40px 0 40px 0px;
+    min-height: 200px;
+    text-align: center;
+}
+.banner_contact h4 {
+    font-size: 35px;
+    font-weight: 900;
+}
+.banner_contact ul {
+    width: 100%;
+    padding: 0 40px;
+}
+.banner_contact label{
+    display: block;
+}
+.banner_contact ul li {
+    padding-top: 20px;
+}
+.banner_contact ul li ~ li {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+@media(max-width: 768px){
+    .banner{
+        min-height: auto;
+        padding-bottom: 50px;
+    }
+    .banner_contact {
+       margin-top: 20px;
+    }
+    .banner_contact h4 {
+        font-size: 20px;
+    }
+    .banner_intro h1 {
+        font-size: 35px;
+    }
+}
+/*Container*/
+.container-content{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.container-title {
+    text-align: center;
+}
+.container-title h1 {
+    color: #FF8000;
+    font-size: 65px;
+}
+.services-wrap {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.services-wrap > div,
+.about-us_sections > div{
+    margin: 10px 0;
+}
+.services-wrap .services-col-wrap{
+   /* -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;*/
+    background: rgba(112,86,72,0.3);
+    background: rgba(112,86,72,0.1);
+    /*margin: 0 20px;*/
+    border-radius: 20px 0;
+    min-height: 300px;
+    padding: 30px;
+
+    -webkit-box-shadow: 0px 15px 35px 0px #eee;
+    box-shadow: 0px 15px 35px 0px #eee;
+    -webkit-transform: scale(.95);
+    -ms-transform: scale(.95);
+    transform: scale(.95);
+    -webkit-transition: .7s;
+    -o-transition: .7s;
+    transition: .7s;
+}
+.services-wrap .services-col-wrap:hover {
+    background: rgba(255,75,69,0.7);
+    color: #fff;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 45px 35px 0px #ccc;
+    box-shadow: 0px 45px 35px 0px #ccc;
+    -webkit-transform: scale(.97);
+    -ms-transform: scale(.97);
+    transform: scale(.97);
+}
+.services-wrap > div h4 {
+    margin: 20px 0;
+    float: left;
+    clear: left;
+    width: 100%;
+}
+.services-wrap > div small{
+    float: left;
+    clear: left;
+    width: 100%;
+}
+.services-wrap i {
+    background: #fff;
+    padding: 45px;
+    border-radius: 100%;
+    font-size: 40px;
+    position: relative;
+    color: #705648;
+    float: right;
+}
+.services-wrap i:before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.about-us_sections img{
+    width: 100%;
+    border-radius: 40px 0;
+}
+
+.row.about-us_sections {
+    align-items: center;
+    padding: 50px 0px;
+}
+section.about-us:before {
+    content: "";
+    width: 50%;
+    height: 1px;
+    background: #ccc;
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+section.about-us {
+    position: relative;
+}
+section.moto-section {
+    background-image: url(../images/ignacio-campo-339901-unsplash.jpg);
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+}
+
+/*end Container*/
+
+/*Home*/
+
+/*end Home*/
+
+
+
+
+/*Footer*/
+footer{
+   /* padding-top: 30px;*/
+}
+.footer-content{
+   /* max-width: 1480px;*/
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 0;
+    -webkit-box-shadow: 0px -9px 23px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -9px 23px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px -9px 23px -11px rgba(0,0,0,0.75);
+}
+.footer-content *{
+    font-size: 15px;
+}
+ul.footer-links > li {
+    display: inline-block;
+    padding: 0 7px;
+    position: relative;
+}
+ul.footer-links > li:first-child{
+    padding-left: 0;
+}
+ul.footer-links > li:not(:last-child):after{
+    content: "";
+    height: 13px;
+    background: #444;
+    width: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: -2px;
+    top: 50%;
+    transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+}
+ul.footer-links > li a{
+    text-decoration: none;
+    color: #444;
+}
+
+ul.footer-links > li a:hover{
+    color: #FF8000;
+}
+.social-media{
+    text-align: center;
+}
+.social-media ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.social-media i {
+    font-size: 30px;
+    color: rgba(0,0,0,0.6);
+}
+.social-media a:hover i{
+    color: #FF8000;
+}
+@media(min-width: 769px){
+    .footer-links, .social-media{
+        display: inline-block;
+        width: 50%;
+    }
+    .social-media{
+        text-align: right;
+    }
+}
+
+/*One page*/
+.divider-title {
+    background: #0f0f0f;
+    color: #fff;
+    text-align: center;
+}
+section.intro {
+    text-align: center;
+}
+.services-section .card-columns .card {
+    display: inline-block;
+    width: 100%;
+    -webkit-box-shadow: 0px 15px 35px 0px #eee;
+    box-shadow: 0px 15px 35px 0px #eee;
+    -webkit-transform: scale(.95);
+    -ms-transform: scale(.95);
+    transform: scale(.95);
+    -webkit-transition: .7s;
+    -o-transition: .7s;
+    transition: .7s;
+}
+section.services-section {
+    background: url(../images/hal-gatewood-405338-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contact-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 500px;
+}
+.image img {
+    width: 100%;
+}
